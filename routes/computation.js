@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   var randomNumber = Math.random()* 100;
   var x = randomNumber;
 
-  if (req.query.x) {
+  if (req.query.x !== undefined) {
     x = parseFloat(req.query.x);
   }
 
